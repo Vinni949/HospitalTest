@@ -26,7 +26,13 @@ namespace Модель_больницы
             Hospital found = list.Find(item => item.Number == number);
             found.AddDoctor();
         }
-
+        public void PrintHospital()
+        {
+            foreach(Hospital hos in list)
+            {
+                Console.WriteLine(hos);
+            }
+        }
 
     }
 }

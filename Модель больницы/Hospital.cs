@@ -43,5 +43,10 @@ namespace Модель_больницы
                 doctors[i].PrintDoctor();
             }
         }
+        public override string ToString()
+        {
+            string s = number.ToString();
+            return s;
+        }
     }
 }
