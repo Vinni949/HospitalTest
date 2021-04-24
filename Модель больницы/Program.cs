@@ -19,6 +19,9 @@ namespace Модель_больницы
         static void Main(string[] args)
         {
             ManagerHospital manager = new ManagerHospital();
+            manager.AddHospital();
+            manager.PrintHospital();
+            manager.AddDoctor();
             
         }
     }
