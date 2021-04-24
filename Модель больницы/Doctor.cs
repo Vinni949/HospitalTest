@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace Модель_больницы
 {
-    class Doctor:Hospital //нет наследования
+    class Doctor
     {
         private string fullName;
         private int experience;
         private string specialization;
    
-        public Doctor(int number, string address, string fullName, int experience, string specialization):base(number,address)
+        public Doctor(int number, string address, string fullName, int experience, string specialization)
         {
             this.fullName = fullName;
             this.experience = experience;
