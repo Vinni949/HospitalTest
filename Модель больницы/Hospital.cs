@@ -8,8 +8,8 @@ namespace Модель_больницы
 {
     class Hospital
     {
-        protected int number;
-        protected string address;
+        private int number;
+        private string address;
         List<Doctor> doctors = new List<Doctor>();
 
         public Hospital(int number, string address)
@@ -30,10 +30,11 @@ namespace Модель_больницы
             Console.WriteLine("Введите ФИО доктора");
             string fullName=Console.ReadLine();
             Console.WriteLine("Введите стаж доктора");
-            int experience=Convert.ToInt32(Console.ReadLine()); ;
+            int experience=Convert.ToInt32(Console.ReadLine());
+            Doctor doc = new Doctor(number, address, fullName, experience);
             Console.WriteLine("Введите специализацию доктора");
             string specialization=Console.ReadLine();
-            Doctor doc = new Doctor(number,address,fullName, experience, specialization);
+            doc.Specialization(specialization);
             doctors.Add(doc);
         }
         public void PrintDoctor()

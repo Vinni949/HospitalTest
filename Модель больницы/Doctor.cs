@@ -10,18 +10,22 @@ namespace Модель_больницы
     {
         private string fullName;
         private int experience;
-        private string specialization;
-   
-        public Doctor(int number, string address, string fullName, int experience, string specialization)
+        Specialization spec = new Specialization();
+
+        public Doctor(int number, string address, string fullName, int experience)
         {
             this.fullName = fullName;
             this.experience = experience;
-            this.specialization = specialization;
+        }
+        
+        public void Specialization(string specialization)
+        {
+            spec.Spec = specialization;
         }
 
         public void PrintDoctor()
         {
-            Console.Write(fullName + "   " + experience + "   " + specialization);
+            Console.Write(fullName + "   " + experience + "   "+spec.Spec);
         }
     }
 }
