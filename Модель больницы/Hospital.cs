@@ -65,7 +65,7 @@ namespace Модель_больницы
             
             for(int i=0;i<doctors.Count;i++)
             {
-                if(serchExperience == doctors[i].getExperienceexperience && searchSpecialization==doctors[i].getSpec)
+                if(serchExperience <= doctors[i].getExperienceexperience && searchSpecialization==doctors[i].getSpec)
                 {
                     doctors[i].PrintDoctor();
                 }
