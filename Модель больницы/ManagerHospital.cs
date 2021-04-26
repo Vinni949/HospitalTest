@@ -22,6 +22,7 @@ namespace Модель_больницы
         }
         public void AddDoctor()
         {
+            Console.WriteLine("Ведите номер больницы к которой прикрепить доктора")
             int number= Convert.ToInt32(Console.ReadLine());
             Hospital found = list.Find(item => item.Number == number);
             found.AddDoctor();
