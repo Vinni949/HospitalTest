@@ -34,5 +34,19 @@ namespace Модель_больницы
                 return fullName;
             }
         }
+        public int getExperienceexperience
+        {
+            get
+            {
+                return experience;
+            }
+        }
+        public string getSpec
+        {
+            get
+            {
+                return spec.Spec;
+            }
+        }
     }
 }

@@ -60,6 +60,18 @@ namespace Модель_больницы
                 }
             }
         }
+        public void SearchDoctors(int serchExperience,string searchSpecialization)
+        {
+            
+            for(int i=0;i<doctors.Count;i++)
+            {
+                if(serchExperience == doctors[i].getExperienceexperience && searchSpecialization==doctors[i].getSpec)
+                {
+                    doctors[i].PrintDoctor();
+                }
+            }
+
+        }
 
     }
 }

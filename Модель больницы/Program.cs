@@ -45,7 +45,7 @@ namespace Модель_больницы
                         manager.AddDoctor();
                         break;
                     case 3:
-
+                        manager.SearchDoctor();
                         break;
                     case 4:
 

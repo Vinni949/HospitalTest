@@ -49,6 +49,17 @@ namespace Модель_больницы
             found.RemoveDoctor();
         }
 
+        public void SearchDoctor()
+        {
+            Console.WriteLine("ВВедите стаж доктора: ");
+            int serchExperience = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("ВВедите специализацию доктора: ");
+            string searchSpecialization = Console.ReadLine();
+            for (int i = 0; i<list.Count;i++)
+            {
+                list[i].SearchDoctors(serchExperience, searchSpecialization);
+            }
+        }
 
     }
 }
