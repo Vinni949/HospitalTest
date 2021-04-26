@@ -54,7 +54,7 @@ namespace Модель_больницы
 
                         break;
                     case 6:
-
+                        manager.RemoveDoctor();
                         break;
                     case 0:
                         b=false;

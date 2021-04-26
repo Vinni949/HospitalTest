@@ -27,5 +27,12 @@ namespace Модель_больницы
         {
             Console.Write(fullName + "   " + experience + "   "+spec.Spec);
         }
+        public string GetDoc
+        {
+            get
+            {
+                return fullName;
+            }
+        }
     }
 }

@@ -49,6 +49,17 @@ namespace Модель_больницы
             string s = number.ToString();
             return s;
         }
+        public void RemoveDoctor()
+        {
+            string name = Console.ReadLine();
+            for(int i=0;i<doctors.Count;i++)
+            {
+                if(doctors[i].GetDoc==name)
+                {
+                    doctors.RemoveAt(i);
+                }
+            }
+        }
 
     }
 }
