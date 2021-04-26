@@ -33,6 +33,14 @@ namespace Модель_больницы
                 Console.WriteLine(hos);
             }
         }
+        public void PrintDoctors()
+        {
+            for (int i = 0; i < list.Count; i++)
+            {
+                list[i].PrintDoctor();
+            }
+        }
+
 
     }
 }

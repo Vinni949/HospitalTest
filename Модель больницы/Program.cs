@@ -22,6 +22,7 @@ namespace Модель_больницы
             manager.AddHospital();
             manager.PrintHospital();
             manager.AddDoctor();
+            manager.PrintDoctors();
             
         }
     }
