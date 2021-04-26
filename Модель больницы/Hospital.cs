@@ -49,5 +49,6 @@ namespace Модель_больницы
             string s = number.ToString();
             return s;
         }
+
     }
 }
