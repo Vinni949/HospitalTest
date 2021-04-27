@@ -21,9 +21,7 @@ namespace Модель_больницы
             ManagerHospital manager = new ManagerHospital();
             manager.AddHospital();
             manager.PrintHospital();
-            manager.AddDoctor();
-            manager.PrintDoctors();
-
+            
             bool b = true;
             while(b==true)
             {
@@ -32,8 +30,7 @@ namespace Модель_больницы
                 Console.WriteLine("2 Добавление доктора.");
                 Console.WriteLine("3 поиск врачей со стажем не менее N лет и заданной специализации.");
                 Console.WriteLine("4 Осуществляет поиск врача по ФИО и специализации.");
-                Console.WriteLine("5 Осуществляет прием и увольнение врачей с работы.");
-                Console.WriteLine("6 Осуществляет увольнение врачей с работы.");
+                Console.WriteLine("5 Осуществляет увольнение врачей с работы.");
                 Console.WriteLine("0 Выход.");
                 int a = Convert.ToInt32(Console.ReadLine());
                 switch(a)
@@ -48,12 +45,9 @@ namespace Модель_больницы
                         manager.SearchDoctor();
                         break;
                     case 4:
-
+                        manager.SearchDoctorFullName();
                         break;
                     case 5:
-
-                        break;
-                    case 6:
                         manager.RemoveDoctor();
                         break;
                     case 0:

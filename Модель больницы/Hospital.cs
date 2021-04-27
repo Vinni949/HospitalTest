@@ -60,7 +60,7 @@ namespace Модель_больницы
                 }
             }
         }
-        public void SearchDoctors(int serchExperience,string searchSpecialization)
+        public void SearchDoctors(int serchExperience, string searchSpecialization)
         {
             
             for(int i=0;i<doctors.Count;i++)
@@ -72,6 +72,17 @@ namespace Модель_больницы
             }
 
         }
+        public void SearchDoctorsFullName(string fullName, string searchSpecialization)
+        {
 
+            for (int i = 0; i < doctors.Count; i++)
+            {
+                if (fullName == doctors[i].GetDoc && searchSpecialization == doctors[i].getSpec)
+                {
+                    doctors[i].PrintDoctor();
+                }
+            }
+
+        }
     }
 }

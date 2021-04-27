@@ -25,7 +25,7 @@ namespace Модель_больницы
 
         public void PrintDoctor()
         {
-            Console.Write(fullName + "   " + experience + "   "+spec.Spec);
+            Console.WriteLine(fullName + "   " + experience + "   "+spec.Spec);
         }
         public string GetDoc
         {

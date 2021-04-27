@@ -60,6 +60,16 @@ namespace Модель_больницы
                 list[i].SearchDoctors(serchExperience, searchSpecialization);
             }
         }
-
+        public void SearchDoctorFullName()
+        {
+            Console.WriteLine("ВВедите стаж доктора: ");
+            string fullName = Console.ReadLine();
+            Console.WriteLine("ВВедите специализацию доктора: ");
+            string searchSpecialization = Console.ReadLine();
+            for (int i = 0; i < list.Count; i++)
+            {
+                list[i].SearchDoctorsFullName(fullName, searchSpecialization);
+            }
+        }
     }
 }
